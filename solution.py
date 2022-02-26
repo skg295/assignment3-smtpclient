@@ -50,12 +50,12 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     # Send QUIT command and handle server response.
     # Fill in start
     # Fill in end
-    quitCommand = 'QUIT\r\n'
-    clientSocket.send(quitCommand.encode())
-    recv1 = clientSocket.recv(1024).decode()
-    print(recv1)
-    if recv1[:3] != '250':
-        print('250 reply not received from server.')
+    #quitCommand = 'QUIT\r\n'
+    #clientSocket.send(quitCommand.encode())
+    #recv1 = clientSocket.recv(1024).decode()
+    #print(recv1)
+    #if recv1[:3] != '250':
+    #    print('250 reply not received from server.')
 
 if __name__ == '__main__':
     smtp_client(1025, '127.0.0.1')
