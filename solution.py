@@ -8,7 +8,8 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     # Choose a mail server (e.g. Google mail server) if you want to verify the script beyond GradeScope
 
     # Create socket called clientSocket and establish a TCP connection with mailserver and port
-
+    clientSocket = socket(AF_INET, SOCK_STREAM)
+    clientSocket.connect((mailserver,port))
     # Fill in start
     # Fill in end
 
@@ -47,7 +48,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     # Send QUIT command and handle server response.
     # Fill in start
-     Fill in end
+    # Fill in end
 
 
 if __name__ == '__main__':
